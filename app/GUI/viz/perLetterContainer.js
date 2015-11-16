@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import PerLetterPie from './perLetterPieComponent';
+import PerLetter from './perLetterComponent';
 
 function mapStateToProps(state) {
   return {
@@ -14,4 +14,4 @@ function mapDispatchToProps() {
 }
 
 export default connect(mapStateToProps,
-  mapDispatchToProps)(PerLetterPie);
+  mapDispatchToProps)(PerLetter);

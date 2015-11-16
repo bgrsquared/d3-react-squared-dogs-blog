@@ -2,7 +2,8 @@ import React, {Component, PropTypes} from 'react';
 
 import {Grid, Well} from 'react-bootstrap';
 
-import PerLetterPie from './viz/perLetterPieContainer';
+import PerLetter from './viz/perLetterContainer';
+import NameLength from './viz/nameLengthContainer';
 import Filter from './filter/filterContainer';
 
 export default class mainComponent extends Component {
@@ -31,7 +32,8 @@ export default class mainComponent extends Component {
 
       <Well bsSize={'small'}><Filter/></Well>
 
-      <PerLetterPie/>
+      <PerLetter/>
+      <NameLength/>
     </Grid>);
   }
 }
