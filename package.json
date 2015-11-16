@@ -1,0 +1,51 @@
+{
+  "name": "Dogs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app/main.js",
+  "scripts": {
+    "deploy": "NODE_ENV=production webpack -p --config webpack.config_PROD.js",
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "Christan Roth (christian.roth@bgrsquared.com",
+  "license": "tbd, (c) bgrsquared.com 2015",
+  "devDependencies": {
+    "babel": "^5.8.29",
+    "babel-core": "~5.8.30",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "~5.3.2",
+    "bootstrap": "^3.3.5",
+    "c3": "^0.4.11-rc4",
+    "css-loader": "^0.23.0",
+    "d3": "^3.5.6",
+    "d3-react-squared": "^0.3.6-beta2",
+    "d3-react-squared-c3-loader": "0.0.2",
+    "eslint": "^1.7.3",
+    "eslint-config-airbnb": "^0.1.0",
+    "eslint-loader": "^1.1.0",
+    "eslint-plugin-react": "^3.6.3",
+    "history": "^1.13.1",
+    "isomorphic-fetch": "^2.2.0",
+    "node-sass": "^3.4.1",
+    "raw-loader": "^0.5.1",
+    "react": "^0.14.0",
+    "react-bootstrap": "^0.27.3",
+    "react-dom": "^0.14.0",
+    "react-hot-loader": "^1.3.0",
+    "react-redux": "^4.0.0",
+    "react-router": "git+https://github.com/acdlite/react-router.git#d8a41c86090ee661bc19b93c0a9169db510c46d8",
+    "redux": "^3.0.4",
+    "redux-devtools": "^2.1.5",
+    "redux-react-router": "^1.0.0-beta3",
+    "redux-thunk": "^1.0.0",
+    "sass-loader": "^3.1.1",
+    "style-loader": "~0.13.0",
+    "url-loader": "~0.5.6",
+    "webpack": "~1.12.2",
+    "webpack-dev-server": "~1.12.1"
+  },
+  "dependencies": {
+    "react-router": "git+https://github.com/acdlite/react-router.git#d8a41c86090ee661bc19b93c0a9169db510c46d8"
+  }
+}
