@@ -3,9 +3,14 @@ import {
   SET_FILTER,
 } from '../constants/ActionTypes';
 
+import filterData from './helpers/filterData';
+
 const initialState = {
   raw: [],
   filtered: [],
+  nameLengthMax: Infinity,
+  nameLengthMin: 0,
+  sex: new Set(['m', 'w']),
 };
 
 export default function dogsReducer(state = initialState, action) {
@@ -15,7 +20,9 @@ export default function dogsReducer(state = initialState, action) {
       newState = Object.assign({}, state, {raw: action.raw, filtered: action.raw});
       return newState;
     case SET_FILTER:
-      return state;
+      newState = Object.assign({}, state, action.filterAction);
+      newState.filtered = filterData(newState);
+      return newState;
     default:
       return state;
   }

@@ -1,8 +1,9 @@
 import React, {Component, PropTypes} from 'react';
 
-import {Grid} from 'react-bootstrap';
+import {Grid, Well} from 'react-bootstrap';
 
 import PerLetterPie from './viz/perLetterPieContainer';
+import Filter from './filter/filterContainer';
 
 export default class mainComponent extends Component {
   componentDidMount() {
@@ -25,7 +26,11 @@ export default class mainComponent extends Component {
       </small>
       <hr/>
       <p>Currently loaded: {raw.length}</p>
-      <p>Currently active (after filtering): {filtered.length}</p>
+      <p>Currently active (after filtering): {filtered.length} (
+        {Math.round(filtered.length / raw.length * 10000) / 100}%)</p>
+
+      <Well bsSize={'small'}><Filter/></Well>
+
       <PerLetterPie/>
     </Grid>);
   }

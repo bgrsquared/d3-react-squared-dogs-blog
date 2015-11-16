@@ -16,6 +16,7 @@ export default class PLP extends Component {
     return (
       <Grid>
         <Col xs={6}>
+          <h4>All Dogs</h4>
           <DR2
             data={myDataRaw}
             params={
@@ -24,6 +25,7 @@ export default class PLP extends Component {
           />
         </Col>
         <Col xs={6}>
+          <h4>Filtered Data</h4>
           <DR2
             data={myDataFiltered}
             params={
