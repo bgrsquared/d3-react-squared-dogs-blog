@@ -15,6 +15,7 @@ export default class NameLength extends Component {
 
     return (
       <Grid fluid>
+        <h3>Dog names by Length</h3>
         <Col xs={6}>
           <h4>All Dogs</h4>
           <DR2

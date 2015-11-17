@@ -94,12 +94,12 @@ class Root extends Component {
 
     return (
       <div>
-        {debugButton}
-
         <Provider store={store}>
           <ReduxRouter />
         </Provider>
         {debug}
+        <hr/>
+        {debugButton}
       </div>
     );
   }

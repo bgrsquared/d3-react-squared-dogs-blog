@@ -1,3 +1,5 @@
+/* global ga */
+
 import React, {Component, PropTypes} from 'react';
 
 import {Grid, Well, Col, Row} from 'react-bootstrap';
@@ -9,14 +11,14 @@ import TextComponent from './TextComponent/textContainer';
 
 export default class mainComponent extends Component {
   componentDidMount() {
+    if (document.location.hostname !== 'localhost') {
+      ga('send', 'pageview', '/dogs');
+    }
     const {getRaw, dispatch} = this.props;
     getRaw()(dispatch);
   }
 
   render() {
-    const {dogData} = this.props;
-    const {raw, filtered} = dogData;
-
     return (<Grid fluid>
       <h1>Dog Names in Zurich</h1>
       <h2>a.k.a. why do we need d3-react-squared?</h2>
@@ -39,12 +41,6 @@ export default class mainComponent extends Component {
         The graphs are just examples and by no means useful, regarding the information presented.
         d3-react squared was designed to link charts, information, events.
       </Well>
-
-      <Col xs={12}>
-        <p>Currently loaded: {raw.length}</p>
-        <p>Currently active (after filtering): {filtered.length} (
-          {Math.round(filtered.length / raw.length * 10000) / 100}%)</p>
-      </Col>
 
       <Row>
         <Col xs={6} md={5} lg={4}>

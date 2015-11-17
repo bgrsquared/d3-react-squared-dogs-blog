@@ -47,7 +47,7 @@ var config = {
     app: ['./app/main.js']
   },
   output: {
-    publicPath: '/trxData/',
+    publicPath: '/dogs/',
     path: path.resolve('./dist'),
     filename: '[name].js'
   },
