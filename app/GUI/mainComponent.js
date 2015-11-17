@@ -19,6 +19,7 @@ export default class mainComponent extends Component {
 
     return (<Grid fluid>
       <h1>Dog Names in Zurich</h1>
+      <h2>a.k.a. why do we need d3-react-squared?</h2>
       <small><a target={'_blank'}
         href={'https://data.stadt-zuerich.ch/dataset/' +
          'pd-stapo-hundenamen/' +
