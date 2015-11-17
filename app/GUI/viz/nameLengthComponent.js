@@ -14,7 +14,7 @@ export default class NameLength extends Component {
     const myDataFiltered = prepNameLength(filtered);
 
     return (
-      <Grid>
+      <Grid fluid>
         <Col xs={6}>
           <h4>All Dogs</h4>
           <DR2

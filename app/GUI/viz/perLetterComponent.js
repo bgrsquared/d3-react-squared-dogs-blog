@@ -14,7 +14,7 @@ export default class PerLetter extends Component {
     const myDataFiltered = prepPerLetter(filtered);
 
     return (
-      <Grid>
+      <Grid fluid>
         <Col xs={6}>
           <h4>All Dogs</h4>
           <DR2
