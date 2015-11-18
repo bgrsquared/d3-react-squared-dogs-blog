@@ -51,6 +51,7 @@ App.propTypes = {
 const routes = (
   <Route component={App}>
     <Route component={Main} path={'/'}/>}
+    <Route component={Main} path={'/dogs/'}/>}
   </Route>
 );
 

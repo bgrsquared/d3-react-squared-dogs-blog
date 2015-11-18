@@ -15,7 +15,7 @@ export default class WrappedText extends Component {
     const {dogData, eventData, setFilter} = this.props;
     const {filtered, raw} = dogData;
     const {timeStamp} = eventData;
-    const ratio = filtered.length / raw.length;
+    const ratio = (filtered.length / raw.length) || 0;
 
     let eventText;
     if (timeStamp) {

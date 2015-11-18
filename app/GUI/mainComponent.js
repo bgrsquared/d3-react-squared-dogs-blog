@@ -20,10 +20,10 @@ export default class mainComponent extends Component {
 
   render() {
     return (<Grid fluid>
-      <h1>Dog Names in Zurich</h1>
+      <h1>Dog Names in Zurich - a showcase</h1>
       <h2>a.k.a. why do we need d3-react-squared?</h2>
       <small><a target={'_blank'}
-        href={'https://data.stadt-zuerich.ch/dataset/' +
+                href={'https://data.stadt-zuerich.ch/dataset/' +
          'pd-stapo-hundenamen/' +
           'resource/11207c68-fc9f-4883-a2ef-3b4a60dd048a'}>Source: Open Data Zurich</a>
         {' '}
@@ -31,14 +31,22 @@ export default class mainComponent extends Component {
       </small>
 
       <Well bsSize={'small'}>
-        <h5>Note:</h5>
+        <h3>Note/Disclaimer:</h3>
         This page is to demonstrate a use-case
         for <a target={'_blank'}
                href={'https://github.com/bgrsquared/d3-react-squared'}>d3-react-squared</a>.
-        Please see TODO/Link for
-        a blog post.
         <br/>
-        The graphs are just examples and by no means useful, regarding the information presented.
+        <ul>
+          <li>
+            MEDIUM Blog Post (TODO/Insert Link)
+          </li>
+          <li>
+            <a target={'_blank'}
+               href={'https://github.com/bgrsquared/d3-react-squared'}>github</a>
+          </li>
+        </ul>
+        The graphs are just examples and by no means useful regarding the information presented
+        (or: the way it is presented).
         d3-react squared was designed to link charts, information, events.
       </Well>
 
