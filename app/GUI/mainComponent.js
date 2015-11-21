@@ -38,15 +38,22 @@ export default class mainComponent extends Component {
         <br/>
         <ul>
           <li>
-            MEDIUM Blog Post (TODO/Insert Link)
+            <a target={'_blank'}
+               href={'https://medium.com/@ilikepiecharts/about-using-d3-react-squared-an-example-8cc5e5a6b58e#.jso6use4q'}>
+              MEDIUM Blog Post</a>
           </li>
           <li>
             <a target={'_blank'}
-               href={'https://github.com/bgrsquared/d3-react-squared'}>github</a>
+               href={'https://github.com/bgrsquared/d3-react-squared'}>d3-react-squared on github</a>
+          </li>
+          <li>
+            <a target={'_blank'}
+               href={'https://github.com/bgrsquared/d3-react-squared-dogs-blog'}>
+              this page (source) on github</a>
           </li>
         </ul>
         The graphs are just examples and by no means useful regarding the information presented
-        (or: the way it is presented).
+        (or the way it is presented).
         d3-react squared was designed to link charts, information, events.
       </Well>
 
