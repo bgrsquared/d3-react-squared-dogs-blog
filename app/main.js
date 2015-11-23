@@ -3,7 +3,7 @@
 // BASICS
 require('react-bootstrap');
 require('../node_modules/bootstrap/dist/css/bootstrap.min.css');
-require('babel/polyfill');
+require('babel-polyfill');
 
 // REACT-ROUTER
 import React, {Component, PropTypes} from 'react';
