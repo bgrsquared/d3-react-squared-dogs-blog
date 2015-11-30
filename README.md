@@ -1,4 +1,6 @@
 # d3-react-squared-dogs-blog
+[LIVE EXAMPLE](http://bgrsquared.com/dogs/)
+
 An example how to use [d3-react-squared](https://github.com/bgrsquared/d3-react-squared) (Dog-Names in Zurich)
 
 This is just an example on how you **could** use [d3-react-squared](https://github.com/bgrsquared/d3-react-squared)
